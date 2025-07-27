@@ -15,20 +15,28 @@
 # Imagine que você está trabalhando com dados de sensores IoT. 
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
-temperatura = 20
+# temperatura = 20
 
-if temperatura < 10:
-    print("baixa")
-elif temperatura <= 20:
-    print("normal")
-else:
-    print("alta")
+# if temperatura < 10:
+#     print("baixa")
+# elif temperatura <= 20:
+#     print("normal")
+# else:
+#     print("alta")
 
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
 # com severidade 'ERROR'. Dado um registro de log em formato de dicionário 
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
+
+log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+
+if log['level'] == 'ERROR':
+    print(log['message'])   
+
+
+
 
 ### Exercício 4: Validação de Dados de Entrada
 # Antes de processar os dados de usuários em um sistema de recomendação, 
