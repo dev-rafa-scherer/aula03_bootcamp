@@ -93,24 +93,27 @@
 
 ### Exercício 8. Filtragem de Dados Faltantes
 # Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
-dados_usuarios = [
-    {'nome': 'Joaquim', 'idade': 20, 'email': 'joaquim@gmail.com'},
-    {'nome': 'Maria', 'idade': None, 'email': 'maria@gmail.com'},
-    {'nome': 'Pedro', 'idade': None, 'email': 'pedro@gmail.com'}
-]
+# dados_usuarios = [
+#     {'nome': 'Joaquim', 'idade': 20, 'email': 'joaquim@gmail.com'},
+#     {'nome': 'Maria', 'idade': None, 'email': 'maria@gmail.com'},
+#     {'nome': 'Pedro', 'idade': None, 'email': 'pedro@gmail.com'}
+# ]
 
-for usuario in dados_usuarios:
-    if usuario['idade'] is None:
-        print(f"Usuário {usuario['nome']} possui idade faltante")
-    if usuario['email'] is None:
-        print(f"Usuário {usuario['nome']} possui email faltante")
-    
-
+# for usuario in dados_usuarios:
+#     if usuario['idade'] is None:
+#         print(f"Usuário {usuario['nome']} possui idade faltante")
+#     if usuario['email'] is None:
+#         print(f"Usuário {usuario['nome']} possui email faltante") 
 
 
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+pares = [num for num in numbers if num % 2 == 0]
+
+print(pares)
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
