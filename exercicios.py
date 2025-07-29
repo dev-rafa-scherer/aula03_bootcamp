@@ -120,26 +120,26 @@
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
-vendas = [
-    {'categoria': 'Eletrônico', 'valor': 1000},
-    {'categoria': 'Eletrônico', 'valor': 2000},
-    {'categoria': 'Vestimenta', 'valor': 500},
-    {'categoria': 'Vestimenta', 'valor': 1000},
-    {'categoria': 'Eletrônico', 'valor': 1500}
+# vendas = [
+#     {'categoria': 'Eletrônico', 'valor': 1000},
+#     {'categoria': 'Eletrônico', 'valor': 2000},
+#     {'categoria': 'Vestimenta', 'valor': 500},
+#     {'categoria': 'Vestimenta', 'valor': 1000},
+#     {'categoria': 'Eletrônico', 'valor': 1500}
 
-]
+# ]
 
-total_por_categoria = {}
+# total_por_categoria = {}
 
-for venda in vendas:
-    categoria = venda['categoria']
-    valor = venda['valor']
-    if categoria in total_por_categoria:
-        total_por_categoria[categoria] += valor
-    else:
-        total_por_categoria[categoria] = valor
+# for venda in vendas:
+#     categoria = venda['categoria']
+#     valor = venda['valor']
+#     if categoria in total_por_categoria:
+#         total_por_categoria[categoria] += valor
+#     else:
+#         total_por_categoria[categoria] = valor
 
-print(total_por_categoria)
+# print(total_por_categoria)
 
 
 
@@ -147,6 +147,15 @@ print(total_por_categoria)
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+
+while True:
+    palavra = input("Digite uma palavra: ")
+    if palavra == "sair":
+        break
+    print(palavra)
+
+
+
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
