@@ -109,14 +109,39 @@
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for num in numbers:
+#     if num % 2 == 0:
+#         print(num)
 
-pares = [num for num in numbers if num % 2 == 0]
+# pares = [num for num in numbers if num % 2 == 0]
 
-print(pares)
+# print(pares)
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+vendas = [
+    {'categoria': 'Eletrônico', 'valor': 1000},
+    {'categoria': 'Eletrônico', 'valor': 2000},
+    {'categoria': 'Vestimenta', 'valor': 500},
+    {'categoria': 'Vestimenta', 'valor': 1000},
+    {'categoria': 'Eletrônico', 'valor': 1500}
+
+]
+
+total_por_categoria = {}
+
+for venda in vendas:
+    categoria = venda['categoria']
+    valor = venda['valor']
+    if categoria in total_por_categoria:
+        total_por_categoria[categoria] += valor
+    else:
+        total_por_categoria[categoria] = valor
+
+print(total_por_categoria)
+
+
 
 ### Exercícios com WHILE
 
