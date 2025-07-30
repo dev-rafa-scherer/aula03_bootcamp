@@ -172,8 +172,20 @@
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
 
+#     # while True:    
+#     # Obtenha os dados da API
+#     # Processe os dados
+#     # Verifique se houver mais dados
+#     # Se houver, continue o loop
+#     # Se não houver, saia do loop e finalize o programa
+
+
+
+
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
+
+
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor específico que indica a parada.
